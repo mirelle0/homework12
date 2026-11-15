@@ -18,7 +18,7 @@ void writefile(char* fname, Train* arr, int size)
     out = fopen(fname, "wt");
     for (int i = 0; i < size; i++)
     {
-        fprintf(out, "No:%3d ; Прибытие:%02d:%02d ; Отбытие:%02d:%02d ; Направление:%15s ; Расстояние:%6.1f\n",
+        fprintf(out, "No:%d ; Прибытие:%d:%d ; Отбытие:%d:%d ; Направление:%s ; Расстояние:%.1f\n"",
             arr[i].number,
             arr[i].arr_hour, arr[i].arr_min,
             arr[i].dep_hour, arr[i].dep_min,
